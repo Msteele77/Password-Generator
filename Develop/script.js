@@ -93,10 +93,3 @@ generateBtn.addEventListener("click", generatePassword);
 function writePassword() {
   var password = generatePassword();
 }
-
-
-
-
-
-//GENERATE FUNCTION CALL
-generatePassword();
