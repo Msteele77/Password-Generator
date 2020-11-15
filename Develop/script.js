@@ -5,7 +5,7 @@ var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var number = "1234567890";
 var character = "!@#$^&%*()+=-[]{}|:<>?,.";
 
-//var pwd = '';
+
 
 
 var lowerSelection = false;
@@ -14,11 +14,12 @@ var numberSelection = false;
 var characterSelection = false;
 
 
+ 
 
 //GENERATE PW FUNCTION
 function generatePassword() {
   
-
+  
 
   var confirmLength = "";
   //LENGTH INPUT FROM USER
@@ -54,6 +55,9 @@ function generatePassword() {
     }
   }
 
+
+
+
 //PW GENERATION
 var characters = '';
     characters += (lowerSelection ? lower : '');
@@ -66,6 +70,8 @@ var characters = '';
     document.getElementById("password").innerHTML = pwd;
 }
 
+
+
 function password(l, characters) {
   var pwd = '';
   for (var i = 0; i < l; ++i) {
@@ -75,24 +81,21 @@ function password(l, characters) {
 }
 
 
+//GET REFERENCES TO THE GENERATE ELEMENT
+var generateBtn = document.querySelector("#generate");
+
 
 //ADD EVENT LISTENER TO GENERATE BUTTON
 generateBtn.addEventListener("click", generatePassword);
 
+
 //WRITE PW TO THE PASSWORD INPUT
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
 }
 
 
 
-
-//GET REFERENCES TO THE GENERATE ELEMENT
-var generateBtn = document.querySelector("#generate");
 
 
 //GENERATE FUNCTION CALL
