@@ -15,14 +15,6 @@ var characterSelection = false;
 
 
 
-
-
-
-
-
-
-
-
 //GENERATE PW FUNCTION
 function generatePassword() {
   
@@ -82,8 +74,7 @@ function password(l, characters) {
   return pwd;
 }
 
-//GET REFERENCES TO THE GENERATE ELEMENT
-var generateBtn = document.querySelector("#generate");
+
 
 //ADD EVENT LISTENER TO GENERATE BUTTON
 generateBtn.addEventListener("click", generatePassword);
@@ -98,6 +89,10 @@ function writePassword() {
 }
 
 
+
+
+//GET REFERENCES TO THE GENERATE ELEMENT
+var generateBtn = document.querySelector("#generate");
 
 
 //GENERATE FUNCTION CALL
